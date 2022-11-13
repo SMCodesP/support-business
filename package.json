@@ -1,15 +1,10 @@
 {
-  "name": "typescript-nextjs-starter",
-  "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+  "name": "support-business",
+  "description": "",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
+  "author": "Samuel Pereira da Silva <samuel.silva513@etec.sp.gov.br> (@SMCodesP)",
   "license": "MIT",
-  "keywords": [
-    "nextjs",
-    "starter",
-    "typescript"
-  ],
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -17,7 +12,8 @@
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "commit": "cz"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -30,6 +26,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "17.2.0",
     "@commitlint/config-conventional": "17.2.0",
@@ -38,6 +39,8 @@
     "@types/react-dom": "18.0.8",
     "@typescript-eslint/eslint-plugin": "5.42.1",
     "@typescript-eslint/parser": "5.42.1",
+    "commitizen": "4.2.5",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
     "eslint-config-prettier": "8.5.0",
