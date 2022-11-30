@@ -22,9 +22,13 @@
     ]
   },
   "dependencies": {
+    "framer-motion": "7.6.15",
     "next": "13.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "4.7.1",
+    "react-intersection-observer": "9.4.1",
+    "styled-components": "5.3.6"
   },
   "config": {
     "commitizen": {
@@ -50,6 +54,7 @@
     "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "typescript-styled-plugin": "0.18.2"
   }
 }
