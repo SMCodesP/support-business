@@ -1,12 +1,11 @@
 import logoImg from '@/public/logo.png';
+import { Link } from 'react-scroll';
 
 import {
   ButtonAccess,
-  ContainerLogo,
   ContainerMenu,
   ListPages,
   LogoImage,
-  LogoText,
   PageItem,
 } from './styles';
 
@@ -16,10 +15,18 @@ const Menu: React.FC = () => {
       <LogoImage src={logoImg} height={84} alt="Logo image website" />
 
       <ListPages>
-        <PageItem>PLANEJAMENTO FINANCEIRO</PageItem>
-        <PageItem>FERRAMENTAS FINANCEIRAS</PageItem>
-        <PageItem>CRÉDITO</PageItem>
-        <PageItem>CAPACITAÇÃO PARA GESTORES</PageItem>
+        <Link to="financialPlanning" smooth={true} duration={500}>
+          <PageItem>PLANEJAMENTO FINANCEIRO</PageItem>
+        </Link>
+        <Link to="financialTools" smooth={true} duration={500}>
+          <PageItem>FERRAMENTAS FINANCEIRAS</PageItem>
+        </Link>
+        <Link to="lineCredits" smooth={true} duration={500}>
+          <PageItem>CRÉDITO</PageItem>
+        </Link>
+        <Link to="trainingManagers" smooth={true} duration={500}>
+          <PageItem>CAPACITAÇÃO PARA GESTORES</PageItem>
+        </Link>
         <PageItem>TRIBUTAÇÃO</PageItem>
       </ListPages>
 

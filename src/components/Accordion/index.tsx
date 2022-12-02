@@ -17,7 +17,6 @@ interface TAccordion {
 }
 
 const Accordion: React.FC<TAccordion> = ({
-  background,
   contentHeader,
   contentAccordion,
 }) => {

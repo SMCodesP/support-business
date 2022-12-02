@@ -48,7 +48,7 @@ export const TitleInformation = styled.h1<TTItleInformation>`
   text-transform: uppercase;
 `;
 
-export const DescriptionInformation = styled.p`
+export const DescriptionInformation = styled.div`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.currentLine};
   white-space: pre-wrap;
