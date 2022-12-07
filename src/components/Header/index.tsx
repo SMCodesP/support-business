@@ -28,7 +28,9 @@ const Header: React.FC = () => {
               que os profissionais responsáveis pela área tenham mais tempo
               hábil.
             </DescriptionFinance>
-            <ButtonDownload>Baixar PDF</ButtonDownload>
+            <a href="/files/manual.pdf" download>
+              <ButtonDownload>Baixar PDF</ButtonDownload>
+            </a>
           </InformationFinance>
         </BoxAnimate>
         <BoxAnimate direction="left">

@@ -1,5 +1,5 @@
 import logoImg from '@/public/logo.png';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 import { HiMail } from 'react-icons/hi';
 
@@ -52,43 +52,40 @@ const Footer: React.FC = () => {
         </ContainerColumn>
         <ContainerColumn>
           <TitleColumn>Navegação</TitleColumn>
-          <Link href="/#data">
+          <Link to="datasQuotes" smooth={true} duration={500}>
             <ItemColumn>DADOS E CITAÇÕES</ItemColumn>
           </Link>
-          <Link href="/#data">
+          <Link to="financialPlanning">
             <ItemColumn>PLANEJAMENTO FINANCEIRO</ItemColumn>
           </Link>
-          <Link href="/#data">
+          <Link to="financialTools">
             <ItemColumn>FERRAMENTAS FINANCEIRAS</ItemColumn>
           </Link>
-          <Link href="/#data">
+          <Link to="lineCredits">
             <ItemColumn>LINHAS DE CRÉDITO</ItemColumn>
           </Link>
-          <Link href="/#data">
-            <ItemColumn>ANÁLISE DE CRÉDITO</ItemColumn>
-          </Link>
-          <Link href="/#data">
+          <Link to="trainingManagers">
             <ItemColumn>CAPACITAÇÃO PARA GESTORES</ItemColumn>
           </Link>
-          <Link href="/#data">
+          <Link to="taxation">
             <ItemColumn>TRIBUTAÇÃO</ItemColumn>
           </Link>
-          <Link href="/#data">
+          <Link to="faq">
             <ItemColumn>PERGUNTAS FREQUENTES</ItemColumn>
           </Link>
         </ContainerColumn>
         <ContainerColumn>
-          <TitleColumn>Integrantes</TitleColumn>
-          <ItemColumn>Fulano</ItemColumn>
-          <ItemColumn>Beltrano</ItemColumn>
-          <ItemColumn>Sla mais quem</ItemColumn>
-          <ItemColumn>Nomes</ItemColumn>
+          <TitleColumn>Caroline Nicoly de Souza</TitleColumn>
+          <ItemColumn>Júlia de Fátima Chiconi</ItemColumn>
+          <ItemColumn>Rafaela Elias Gonçalves</ItemColumn>
+          <ItemColumn>Stephanie da Silva Aparecido</ItemColumn>
+          <ItemColumn>Gabriela Carolini Paliuco</ItemColumn>
         </ContainerColumn>
         <ContainerColumn>
           <TitleColumn>Contatos</TitleColumn>
           <ItemColumn>
             <FaPhoneAlt size={18} />
-            (17) 99999-9999
+            (17) 99673-2083
           </ItemColumn>
           <ItemColumn>
             <FaWhatsapp size={18} />
@@ -96,7 +93,7 @@ const Footer: React.FC = () => {
           </ItemColumn>
           <ItemColumn>
             <HiMail size={18} />
-            suporte@supportbusiness.com
+            apoiarnegocios@gmail.com
           </ItemColumn>
         </ContainerColumn>
       </ContainerColumns>
@@ -106,7 +103,7 @@ const Footer: React.FC = () => {
           © 2022 Support Business. Todos direitos reservados.
         </TextCopyright>
         <TextCredits>
-          Feito com <FaHeart color="#e02041" /> por Equipe X.
+          Feito com <FaHeart color="#e02041" /> por Support Business.
         </TextCredits>
       </ContainerCopyright>
     </ContainerFooter>

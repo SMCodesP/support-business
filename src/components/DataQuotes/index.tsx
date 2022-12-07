@@ -12,9 +12,11 @@ import {
   IconCard,
 } from './styles';
 
-const DataQuotes: React.FC = () => {
+const DataQuotes: React.FC<{
+  id?: string;
+}> = ({ ...props }) => {
   return (
-    <ContainerDataQuotes>
+    <ContainerDataQuotes {...props}>
       <TitleDataQuotes>Dados & Citações</TitleDataQuotes>
       <DescriptionDataQuotes>
         A descrição dos procedimentos e métodos utilizados nas pesquisas sempre

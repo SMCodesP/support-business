@@ -33,7 +33,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <DataQuotes />
+
+      <DataQuotes id="datasQuotes" />
 
       <DefaultInformation id="financialPlanning">
         <BoxAnimate direction="right">
@@ -670,7 +671,7 @@ export default function Home() {
         </ContainerSpace>
       </BoxAnimate>
 
-      <DefaultInformation>
+      <DefaultInformation id="taxation">
         <BoxAnimate direction="right">
           <ContainerText>
             <TitleInformation>TRIBUTAÇÃO</TitleInformation>
@@ -791,7 +792,7 @@ export default function Home() {
       </DefaultInformation>
 
       <BoxAnimate direction="down">
-        <ContainerSpace>
+        <ContainerSpace id="faq">
           <TitleInformation>Perguntas Frequentes</TitleInformation>
           <Accordion
             contentHeader={

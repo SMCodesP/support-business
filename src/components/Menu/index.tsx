@@ -27,10 +27,14 @@ const Menu: React.FC = () => {
         <Link to="trainingManagers" smooth={true} duration={500}>
           <PageItem>CAPACITAÇÃO PARA GESTORES</PageItem>
         </Link>
-        <PageItem>TRIBUTAÇÃO</PageItem>
+        <Link to="taxation" smooth={true} duration={500}>
+          <PageItem>TRIBUTAÇÃO</PageItem>
+        </Link>
       </ListPages>
 
-      <ButtonAccess>Manual</ButtonAccess>
+      <a href="/files/manual.pdf" download>
+        <ButtonAccess>Manual</ButtonAccess>
+      </a>
     </ContainerMenu>
   );
 };
