@@ -9,9 +9,7 @@ import { useEffect } from 'react';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    if (document) {
-      console.log(`body scroll left`);
-      // document.body.scrollLeft = 0;
+    if (document && document.scrollingElement) {
       document.scrollingElement.scrollLeft = 0;
     }
   }, [Component]);
