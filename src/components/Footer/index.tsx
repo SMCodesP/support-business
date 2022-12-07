@@ -75,7 +75,8 @@ const Footer: React.FC = () => {
           </Link>
         </ContainerColumn>
         <ContainerColumn>
-          <TitleColumn>Caroline Nicoly de Souza</TitleColumn>
+          <TitleColumn>Integrantes</TitleColumn>
+          <ItemColumn>Caroline Nicoly de Souza</ItemColumn>
           <ItemColumn>Júlia de Fátima Chiconi</ItemColumn>
           <ItemColumn>Rafaela Elias Gonçalves</ItemColumn>
           <ItemColumn>Stephanie da Silva Aparecido</ItemColumn>

@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
   body,
   #__next {
     font-family: "Poppins", sans-serif;
-    height: 100%;
+    width: 100%;
     background: ${({ theme }) => theme.background};
   }
 

@@ -49,6 +49,7 @@ const BoxAnimate: React.FC<TBoxAnimate> = ({
       transition={{ duration: 0.75 }}
       variants={boxVariants[direction]}
       initial="hidden"
+      viewport={{ once: true }}
       animate={control}
       style={style}
       {...(props as any)}
